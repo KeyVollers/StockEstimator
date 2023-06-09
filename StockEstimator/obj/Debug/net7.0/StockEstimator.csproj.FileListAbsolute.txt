@@ -1,0 +1,15 @@
+/Users/keyvollers/Documents/Finance/StockEstimator/StockEstimator/bin/Debug/net7.0/StockEstimator
+/Users/keyvollers/Documents/Finance/StockEstimator/StockEstimator/bin/Debug/net7.0/StockEstimator.deps.json
+/Users/keyvollers/Documents/Finance/StockEstimator/StockEstimator/bin/Debug/net7.0/StockEstimator.runtimeconfig.json
+/Users/keyvollers/Documents/Finance/StockEstimator/StockEstimator/bin/Debug/net7.0/StockEstimator.dll
+/Users/keyvollers/Documents/Finance/StockEstimator/StockEstimator/bin/Debug/net7.0/StockEstimator.pdb
+/Users/keyvollers/Documents/Finance/StockEstimator/StockEstimator/obj/Debug/net7.0/StockEstimator.csproj.AssemblyReference.cache
+/Users/keyvollers/Documents/Finance/StockEstimator/StockEstimator/obj/Debug/net7.0/StockEstimator.GeneratedMSBuildEditorConfig.editorconfig
+/Users/keyvollers/Documents/Finance/StockEstimator/StockEstimator/obj/Debug/net7.0/StockEstimator.AssemblyInfoInputs.cache
+/Users/keyvollers/Documents/Finance/StockEstimator/StockEstimator/obj/Debug/net7.0/StockEstimator.AssemblyInfo.cs
+/Users/keyvollers/Documents/Finance/StockEstimator/StockEstimator/obj/Debug/net7.0/StockEstimator.csproj.CoreCompileInputs.cache
+/Users/keyvollers/Documents/Finance/StockEstimator/StockEstimator/obj/Debug/net7.0/StockEstimator.dll
+/Users/keyvollers/Documents/Finance/StockEstimator/StockEstimator/obj/Debug/net7.0/refint/StockEstimator.dll
+/Users/keyvollers/Documents/Finance/StockEstimator/StockEstimator/obj/Debug/net7.0/StockEstimator.pdb
+/Users/keyvollers/Documents/Finance/StockEstimator/StockEstimator/obj/Debug/net7.0/StockEstimator.genruntimeconfig.cache
+/Users/keyvollers/Documents/Finance/StockEstimator/StockEstimator/obj/Debug/net7.0/ref/StockEstimator.dll
