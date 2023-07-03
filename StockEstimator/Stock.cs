@@ -1,0 +1,1 @@
+//This will be the base of the stock object used in original program
