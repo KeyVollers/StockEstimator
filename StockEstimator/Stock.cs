@@ -6,38 +6,6 @@ namespace StockEstimator;
 
 public class Stock
 {
-  private decimal average;
-  private decimal buy;
-  private decimal sell;
-
-  public decimal High { private set; get; }
-  public decimal Low { private set; get; }
-  public decimal Average
-  {
-    get { return average; }
-    private set
-    {
-      average = (this.High + this.Low) / 2;
-    }
-  }
-  public decimal Buy
-  {
-    get { return buy; }
-    private set
-    {
-      buy = this.Average - (this.High + this.Low) / 4;
-    }
-  }
-  public decimal Sell
-  {
-    get { return sell; }
-    private set
-    {
-      sell = this.Average + (this.High + this.Low) / 4;
-    }
-  }
-  public string Name { private set; get; }
-
   public Stock(decimal high, decimal low, string? name)
   {
     this.High = high;
@@ -52,7 +20,19 @@ public class Stock
     {
       this.Name = name;
     }
+
+    this.Average = (this.High + this.Low) / 2;
+    this.Buy = this.Average - (this.High + this.Low) / 4;
+    this.Sell = this.Average + (this.High + this.Low) / 4;
+
   }
+
+  public decimal High { private set; get; }
+  public decimal Low { private set; get; }
+  public decimal Average { private set; get; }
+  public decimal Buy { private set; get; }
+  public decimal Sell { private set; get; }
+  public string Name { private set; get; }
 
   public void printStockInfoToTerminal()
   {
