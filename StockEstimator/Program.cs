@@ -19,9 +19,6 @@ namespace StockEstimator
 
       decimal high;
       decimal low;
-      decimal average;
-      decimal buy;
-      decimal sell;
 
       bool isNumber;
       bool newStock = true;
@@ -59,23 +56,9 @@ namespace StockEstimator
         }
         else
         {
-          average = (high - low) / 2 + low;
-          buy = average - ((high - low) / 4);
-          sell = average + ((high - low) / 4);
+          Stock s = new Stock(high, low, stockSymbole);
 
-          high = Math.Round(high, 2);
-          low = Math.Round(low, 2);
-          average = Math.Round(average, 2);
-          buy = Math.Round(buy, 2);
-          sell = Math.Round(sell, 2);
-
-          Console.WriteLine("\n" + stockSymbole);
-          Console.WriteLine($"\tHigh     |\t${high}");
-          Console.WriteLine($"\tLow      |\t${low}");
-          Console.WriteLine($"\tAverage  |\t${average}");
-          Console.WriteLine($"\tBuy      |\t${buy}");
-          Console.WriteLine($"\tSell     |\t${sell}\n");
-
+          s.printStockInfoToTerminal();
           //TODO: Needs better error handling for bad user input.
           Console.Write("Would you like to continue 'y' or 'n': ");
           userInput = Console.ReadLine();

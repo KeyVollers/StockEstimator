@@ -38,11 +38,20 @@ public class Stock
   }
   public string Name { private set; get; }
 
-  public Stock(decimal high, decimal low, string name)
+  public Stock(decimal high, decimal low, string? name)
   {
     this.High = high;
     this.Low = low;
-    this.Name = name;
+
+    //if there is no name
+    if (name == null)
+    {
+      this.Name = "Unknown";
+    }
+    else
+    {
+      this.Name = name;
+    }
   }
 
   public void printStockInfoToTerminal()
