@@ -21,9 +21,9 @@ public class Stock
       this.Name = name;
     }
 
-    this.Average = (this.High + this.Low) / 2;
-    this.Buy = this.Average - (this.High + this.Low) / 4;
-    this.Sell = this.Average + (this.High + this.Low) / 4;
+    this.Average = (this.High - this.Low) / 2 + this.Low;
+    this.Buy = this.Average - (this.High - this.Low) / 4;
+    this.Sell = this.Average + (this.High - this.Low) / 4;
 
   }
 
