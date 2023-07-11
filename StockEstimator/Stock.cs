@@ -6,7 +6,6 @@ namespace StockEstimator;
 
 public class Stock
 {
-  private bool buying = false;
   public Stock(decimal high, decimal low, string? name)
   {
     this.High = high;

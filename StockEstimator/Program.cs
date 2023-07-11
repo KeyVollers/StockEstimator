@@ -90,6 +90,10 @@ namespace StockEstimator
             {
               s.Buying = true;
             }
+            else
+            {
+              s.Buying = false;
+            }
 
             //Handling total stock value
             Console.Write("What is the total value of this stock?: ");
