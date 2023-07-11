@@ -30,6 +30,7 @@ namespace StockEstimator
 
       decimal high;
       decimal low;
+      decimal totalStockValue;
 
       bool isNumber;
       bool newStock = true;
@@ -82,6 +83,25 @@ namespace StockEstimator
           userInput = Console.ReadLine();
           if (userInput == "y")
           {
+            Console.Write("Are you buying this stock? 'y' or 'n': ");
+            userInput = Console.ReadLine();
+            if (userInput == "y")
+            {
+              s.Buying = true;
+            }
+            Console.Write("What is the total value of this stock?: ");
+            userInput = Console.ReadLine();
+            isNumber = Decimal.TryParse(userInput, out totalStockValue);
+            if (isNumber)
+            {
+              s.TotalStockValue = totalStockValue;
+              s.NumShares = (int)(totalStockValue / s.Buy);
+            }
+            else
+            {
+              s.TotalStockValue = 0;
+              s.NumShares = 0;
+            }
             using (StreamWriter writer = new StreamWriter(filePath, true))
             {
               writer.WriteLine(s);
