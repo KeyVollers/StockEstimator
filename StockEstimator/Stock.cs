@@ -33,6 +33,9 @@ public class Stock
   public decimal Buy { private set; get; }
   public decimal Sell { private set; get; }
   public string Name { private set; get; }
+  public decimal totalStockValue { set; get; }
+  public int numShares { set; get; }
+  public int valuePerShare { set; get; }
 
   public void printStockInfoToTerminal()
   {
