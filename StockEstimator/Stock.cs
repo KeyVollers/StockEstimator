@@ -6,6 +6,7 @@ namespace StockEstimator;
 
 public class Stock
 {
+  private bool buying = false;
   public Stock(decimal high, decimal low, string? name)
   {
     this.High = high;
@@ -33,9 +34,9 @@ public class Stock
   public decimal Buy { private set; get; }
   public decimal Sell { private set; get; }
   public string Name { private set; get; }
-  public decimal totalStockValue { set; get; }
-  public int numShares { set; get; }
-  public int valuePerShare { set; get; }
+  public decimal TotalStockValue { set; get; }
+  public int NumShares { set; get; }
+  public bool Buying { set; get; }
 
   public void printStockInfoToTerminal()
   {
