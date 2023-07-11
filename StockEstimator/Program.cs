@@ -47,7 +47,7 @@ namespace StockEstimator
 
         do
         {
-          Console.Write("\nPlease write month high value: ");
+          Console.Write("\nPlease write 5-day high value: ");
           userInput = Console.ReadLine();
           isNumber = Decimal.TryParse(userInput, out high);
           if (!isNumber)
@@ -58,7 +58,7 @@ namespace StockEstimator
 
         do
         {
-          Console.Write("\nPlease write month low value: ");
+          Console.Write("\nPlease write 5-day low value: ");
           userInput = Console.ReadLine();
           isNumber = Decimal.TryParse(userInput, out low);
           if (!isNumber)
@@ -82,7 +82,10 @@ namespace StockEstimator
           userInput = Console.ReadLine();
           if (userInput == "y")
           {
-            File.WriteAllText(filePath, s.ToString());
+            using (StreamWriter writer = new StreamWriter(filePath, true))
+            {
+              writer.WriteLine(s);
+            }
           }
           //TODO: Needs better error handling for bad user input.
           Console.Write("\nWould you like to continue 'y' or 'n': ");

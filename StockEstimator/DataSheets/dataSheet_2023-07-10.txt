@@ -1,0 +1,42 @@
+AAPL
+	High     |	$193.47
+	Low      |	$187.08
+	Average  |	$190.28
+	Buy      |	$188.68
+	Sell     |	$191.87
+
+COP
+	High     |	$104.90
+	Low      |	$99.42
+	Average  |	$102.16
+	Buy      |	$100.79
+	Sell     |	$103.53
+
+CVX
+	High     |	$158.08
+	Low      |	$151.73
+	Average  |	$154.90
+	Buy      |	$153.32
+	Sell     |	$156.49
+
+GTLB
+	High     |	$51.37
+	Low      |	$48.52
+	Average  |	$49.94
+	Buy      |	$49.23
+	Sell     |	$50.66
+
+NVDA
+	High     |	$431.83
+	Low      |	$415.25
+	Average  |	$423.54
+	Buy      |	$419.40
+	Sell     |	$427.68
+
+MSFT
+	High     |	$342.40
+	Low      |	$327.85
+	Average  |	$335.12
+	Buy      |	$331.49
+	Sell     |	$338.76
+
