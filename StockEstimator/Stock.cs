@@ -50,11 +50,18 @@ public class Stock
 
   public override string ToString()
   {
-    string fullStockInfo = this.Name;
+    string fullStockInfo = this.Name + " - " + this.TotalStockValue;
     fullStockInfo += $"\n\tHigh     |\t${Math.Round(this.High, 2)}";
     fullStockInfo += $"\n\tLow      |\t${Math.Round(this.Low, 2)}";
     fullStockInfo += $"\n\tAverage  |\t${Math.Round(this.Average, 2)}";
-    fullStockInfo += $"\n\tBuy      |\t${Math.Round(this.Buy, 2)}";
+    if (this.Buying)
+    {
+      fullStockInfo += $"\n\tBuy      |\t${Math.Round(this.Buy, 2)}  -  {this.NumShares} shares";
+    }
+    else
+    {
+      fullStockInfo += $"\n\tBuy      |\t${Math.Round(this.Buy, 2)}";
+    }
     fullStockInfo += $"\n\tSell     |\t${Math.Round(this.Sell, 2)}\n";
     return fullStockInfo;
   }
