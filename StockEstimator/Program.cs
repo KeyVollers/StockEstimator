@@ -1,5 +1,4 @@
 ﻿//TODO: Write documentation for header and program intentions
-//TODO: Make it so we can save output to a file
 //TODO: Make it so we can save input over time calculating larger averages
 //        and tracking stocks.
 //TODO: Make a check system to make sure stock exists.
