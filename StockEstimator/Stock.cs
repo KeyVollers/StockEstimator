@@ -44,4 +44,14 @@ public class Stock
     Console.WriteLine($"\tSell     |\t${Math.Round(this.Sell, 2)}\n");
   }
 
+  public string FormatedString()
+  {
+    string fullStockInfo = "\n" + this.Name;
+    fullStockInfo += $"\tHigh     |\t${Math.Round(this.High, 2)}";
+    fullStockInfo += $"\tLow      |\t${Math.Round(this.Low, 2)}";
+    fullStockInfo += $"\tAverage  |\t${Math.Round(this.Average, 2)}";
+    fullStockInfo += $"\tBuy      |\t${Math.Round(this.Buy, 2)}";
+    fullStockInfo += $"\tSell     |\t${Math.Round(this.Sell, 2)}\n";
+    return fullStockInfo;
+  }
 }
