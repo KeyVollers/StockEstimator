@@ -83,12 +83,15 @@ namespace StockEstimator
           userInput = Console.ReadLine();
           if (userInput == "y")
           {
+            //asking if buying or selling 
             Console.Write("Are you buying this stock? 'y' or 'n': ");
             userInput = Console.ReadLine();
             if (userInput == "y")
             {
               s.Buying = true;
             }
+
+            //Handling total stock value
             Console.Write("What is the total value of this stock?: ");
             userInput = Console.ReadLine();
             isNumber = Decimal.TryParse(userInput, out totalStockValue);
@@ -102,6 +105,8 @@ namespace StockEstimator
               s.TotalStockValue = 0;
               s.NumShares = 0;
             }
+
+            //writing data to file for the day
             using (StreamWriter writer = new StreamWriter(filePath, true))
             {
               writer.WriteLine(s);
