@@ -1,0 +1,42 @@
+COP - 1556.10
+	High     |	$107.44
+	Low      |	$99.49
+	Average  |	$103.46
+	Buy      |	$101.48  -  15 shares
+	Sell     |	$105.45
+
+CVX - 1095.15
+	High     |	$158.12
+	Low      |	$151.87
+	Average  |	$155.00
+	Buy      |	$153.43  -  7 shares
+	Sell     |	$156.56
+
+GTLB - 1463.35
+	High     |	$51.87
+	Low      |	$48.52
+	Average  |	$50.20
+	Buy      |	$49.36  -  29 shares
+	Sell     |	$51.03
+
+NVDA - 4487.23
+	High     |	$431.83
+	Low      |	$415.26
+	Average  |	$423.54
+	Buy      |	$419.40
+	Sell     |	$427.69
+
+MSFT - 6389.74
+	High     |	$342.40
+	Low      |	$327.37
+	Average  |	$334.88
+	Buy      |	$331.13
+	Sell     |	$338.64
+
+AAPL - 2092.12
+	High     |	$192.93
+	Low      |	$186.88
+	Average  |	$189.90
+	Buy      |	$188.39
+	Sell     |	$191.42
+

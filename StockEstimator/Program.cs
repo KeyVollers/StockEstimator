@@ -15,7 +15,7 @@ namespace StockEstimator
     public static string getFilePath()
     {
       DateTime today = DateTime.Now;
-      string formattedDate = today.ToString("yyyy-MM-dd");
+      string formattedDate = today.ToString("yyyy-dd-MM");
       string fileName = "dataSheet_" + formattedDate + ".txt";
       string filePath = "/Users/keyvollers/Documents/Finance/StockEstimator/StockEstimator/DataSheets/";
       filePath += fileName;
@@ -37,8 +37,14 @@ namespace StockEstimator
       //Creating new file
       string filePath = getFilePath();
       FileStream fs = File.Create(filePath);
+      DateTime today = DateTime.Now;
       fs.Close();
 
+      //Writing dat and info at top of Data Sheet
+      using (StreamWriter writer = new StreamWriter(filePath, true))
+      {
+        writer.WriteLine("Data Sheet: " + today.ToString("dd-MM-yyyy") + "\n\n");
+      }
 
       while (newStock)
       {
